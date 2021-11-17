@@ -8,14 +8,18 @@
 	<link rel="stylesheet" href="style.css">
 	<style>
 		.sliderimg{
-			height: 800px;
-			width: 100%;
-			margin-bottom: 8%;
+		height: 100%;
+		left: -9999px;
+		max-width: none;
+		right: -9999px;
+		vertical-align:top;
+
 		}
+		#myslideshow{ position: absolute; margin: auto; position: absolute; }
 	</style>
 </head>
 <body>
-	<div class ="w-100 h-16 bg-gray-900 ">
+	<div class ="w-100 h-16 bg-gray-900  ">
 		<div class=" border-opacity-100 w-100 h-16 flex ">
 			<img class = "w-36 h-15  m-1 ml-2   border border-gray-800 hover:border-white rounded " src="amz.png" alt="">
 			<img class = "w-5 h-5 mt-7 mr-1" src="outline_place_white_24dp.png" alt="">
@@ -25,19 +29,19 @@
 				
 			</div>
 			
-			<select name ="all" id ="all" class = "w-12 h-10 ml-5  mt-2 ml-3.5  rounded-l-md bg-gray-100" >
+			<select name ="all" id ="all" class = "w-12 h-10   mt-2 ml-3.5  rounded-l-md bg-gray-100" >
 				<option value ="mobile">All</option>
 				<option label ="Mobile" value ="Mobile"></option>
 				<option label ="Computers" value ="Computers"></option>
 				<option label ="Tv" value ="Tv"></option>
 				<option label ="Deals" value ="Deals"></option>
 			</select>
-			<input class = "w-5/12 mt-2 ml-3.5 mb-2 ml-3.5  ">
-			<div class = "w-12 h-10   mt-2 ml-3.5  rounded-r-md bg-yellow-400 bg-opacity-100 ">
-            <img class = "w-8 h-8 m-1.5 "src="search.png" alt="">
+			<input class = "w-5/12 mt-2 -ml-0 mb-4 ml-3.5  ">
+			<div class = "w-12 h-10   mt-2 -ml-3.5  rounded-r-md bg-yellow-400 bg-opacity-100 ">
+            <img class = "w-8 h-8 m-1.5 ml"src="search.png" alt="">
 			</div>
 			<div>
-				<img class = "w-6 h-4 m-6 mt-7 "src="https://cdn.britannica.com/97/1597-004-05816F4E/Flag-India.jpg" alt="">
+				<img class = "w-6 h-4 m-6 mt-7  "src="https://cdn.britannica.com/97/1597-004-05816F4E/Flag-India.jpg" alt="">
 			</div>
 			<div class = "  text-white text-sm inline font-bold text-xs p-1 border border-gray-900 hover:border-white rounded">
 				<div class ="font-normal text-gray-300 mt-2 ml-3.5 leading-2 ml-3.5 text-xs ">Hello,Sign in</div>
@@ -79,15 +83,15 @@
 	<img class ="w-6 h-6 mt-1.5 ml-4" src="applogo.png" alt="">
 	<div>
 		 
-		 <div class = "text-white mt-2.5 ml-1 text-sm"><b class = "p-2 border border-gray-800 hover:border-white rounded">Download app Now</b></div>
+		 <div class = "text-white mt-2.5 ml-1 text-sm"><b class = "p-2 border border-gray-800 hover:border-white rounded ">Shopping made easy | Download app Now</b></div>
 	 </div>
 
 </div>
 <div id = "myslideshow" >
 
 </div>
-<div class =" flex space-x-4">
-	<div class = " flex-1 w-72 h-1/2 bg-blue-100 p-5 pl-7 text-2xl m-3 font-bold">Upgrade your home | Amazon Brands & more
+<div class =" flex space-x-4 mt-64 absolute">
+	<div class = " flex-1 w-72 h-1/2 bg-white p-5 pl-7 text-2xl m-3 font-bold">Upgrade your home | Amazon Brands & more
 
 		<div class ="flex">
 			<img class = "w-32 h-28 m-2 ml-0.5" src="https://images-eu.ssl-images-amazon.com/images/G/31/img19/AmazonPay/HFC_21/Avatar_QC_PC/Postpaid_372x232._SY232_CB663598662_.jpg" alt="">
@@ -118,7 +122,7 @@
 
 
 	</div>
-	<div class = " flex-1 w-96 h-1/2 bg-blue-100 text-2xl p-5 m-3"><b>Bill payments got fast & convenient</b>
+	<div class = " flex-1 w-96 h-1/2 bg-white text-2xl p-5 m-3"><b>Bill payments got fast & convenient</b>
 		
 		<div class ="flex">
 			<img class = "w-32 h-28 m-2 ml-3.5" src="https://images-eu.ssl-images-amazon.com/images/G/31/img19/AmazonPay/HFC_21/Avatar_QC_PC/Postpaid_372x232._SY232_CB663598662_.jpg" alt="">
@@ -148,7 +152,7 @@
 
 	</div>
 
-	<div class = " flex-1 w-96  bg-blue-100 text-2xl p-5 font-bold  m-3">Top picks for your home
+	<div class = " flex-1 w-96  bg-white text-2xl p-5 font-bold  m-3">Top picks for your home
 
 		<div class ="flex">
 			<img class = "w-32 h-28 m-2 ml-3.5" src="https://images-eu.ssl-images-amazon.com/images/G/31/img19/AmazonPay/HFC_21/Avatar_QC_PC/Postpaid_372x232._SY232_CB663598662_.jpg" alt="">
@@ -178,7 +182,7 @@
 		
 
 	</div>
-	<div class = " flex-1 w-80 h-1/2 bg-blue-100 text-xl p-5 text-2xl  m-3 mr-4 font-bold">Now save bill details & get timely reminders
+	<div class = " flex-1 w-80 h-1/2 bg-white text-xl p-5 text-2xl  m-3 mr-4 font-bold">Now save bill details & get timely reminders
 		<div class ="flex">
 			<img class = "w-32 h-28 m-2 ml-3.5" src="https://images-eu.ssl-images-amazon.com/images/G/31/img19/AmazonPay/HFC_21/Avatar_QC_PC/Postpaid_372x232._SY232_CB663598662_.jpg" alt="">
 			<img class = "w-32 h-28 m-2 ml-3.5"  src="https://images-eu.ssl-images-amazon.com/images/G/31/img19/AmazonPay/HFC_21/Avatar_QC_PC/Electricity_186x116._SY116_CB663599035_.jpg" alt="">
@@ -209,7 +213,7 @@
 	</div>
 </div>
 
-<div class =" flex space-x-4 mt-10">
+<div class =" flex space-x-4 mt-10 mt-mxl ">
 	<div class = " flex-1 w-96 h-1/2 bg-blue-100 text-xl p-5 text-2xl font-bold">Upgrade your home | Amazon Brands & more
 
 		<div class ="flex">
